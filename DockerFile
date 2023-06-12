@@ -4,8 +4,8 @@ WORKDIR /jenkins
 
 COPY *.go ./
 
-RUN go build -o /go-docker-demo
+RUN go build -o app .
 
 EXPOSE 8080
 
-CMD [ "/go-docker-demo" ]
+CMD ["./jenkins"]
