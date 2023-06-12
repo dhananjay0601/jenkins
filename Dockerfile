@@ -1,8 +1,7 @@
 FROM golang:1.19.5-alpine3.9
 WORKDIR /jenkins
 COPY *.go ./
-RUN go build -o main .
+RUN go build -o hello-world .
 EXPOSE 8080
 CMD ["./hello"]
-#docker build -t my-go-app
-#docker run -p 8080:8080 my-go-app
+
