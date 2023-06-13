@@ -1,3 +1,5 @@
 FROM node:18.16.0-alpine
 
-RUN apk add -U subversion
+COPY . /app
+RUN make /app
+CMD ["hello wolrd"]
